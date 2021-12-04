@@ -39,13 +39,16 @@ module.exports = new Event("ready", async (client) => {
   let randomTimeToAppear =
     Math.floor(Math.random() * (maxHour - minHour + 1)) + minHour;
 
+  console.log("first random time", randomTimeToAppear);
+
   const sendEmoteAndDelete = async () => {
     // getting random times
     randomTimeToAppear =
       Math.floor(Math.random() * (maxHour - minHour + 1)) + minHour;
-
+    console.log("interval time", randomTimeToAppear);
     const randomTimeToReact =
       Math.floor(Math.random() * (maxMinute - minMinute + 1)) + minMinute;
+    console.log("time to react", randomTimeToReact);
 
     // getting the emote
     const randomEmoteName =
