@@ -4,7 +4,7 @@ dotenv.config();
 const prefix = "T!" || "t!";
 
 module.exports = new Event("messageCreate", (client, message) => {
-  if (!message.content.startsWith(process.env.PREFIX)) return;
+  if (!message.content.startsWith(prefix)) return;
 
   const args = message.content.substring(prefix.length).split(/ +/);
 
