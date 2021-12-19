@@ -26,7 +26,7 @@ module.exports = new Command({
         }, 6000);
       }
       const responses = [
-        `${message.author.username} handed ${taggedMember.user.username}, Ура! 🍪`,
+        `${message.author.username} handed ${taggedMember.user.username} a cookie, Ура! 🍪`,
         `What is it? Oh ${message.author.username} has a cookie for ${taggedMember.user.username} 🍪`,
       ];
       const randomResponse =
