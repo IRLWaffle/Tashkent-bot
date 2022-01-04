@@ -1,10 +1,10 @@
 const Command = require("../../Structures/Command");
-const { interactionsBetweenMembers } = require("../../Structures/Fun");
+const { selfInteraction } = require("../../Structures/Fun");
 
 module.exports = new Command({
-  name: "pat",
+  name: "cringe",
   description: "this command pats someone",
   run: async (message, args, client) => {
-    interactionsBetweenMembers("pat", args, message);
+    selfInteraction("cringe", args, message);
   },
 });
