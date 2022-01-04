@@ -15,6 +15,7 @@
     "dotenv": "^10.0.0",
     "mongoose": "^6.0.14",
     "random-gif-api": "^1.0.4",
+    "soyultro": "^4.8.5",
     "tenorjs": "^1.0.8"
   },
   "devDependencies": {
