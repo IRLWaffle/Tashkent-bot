@@ -9,7 +9,7 @@ module.exports = new Command({
     const embed = new Discord.MessageEmbed()
       .setTitle("**The people that participated in the merry kissmas event")
       .setColor("ORANGE");
-    const members = await Member.find({
+    const members = await Member.find.memberPumpkin({
       guildId: message.guild.id,
     });
     const userId = [];
