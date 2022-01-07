@@ -1,7 +1,7 @@
-const Command = require("../../Structures/Command");
-const MemberSchema = require("../../Schemas/memberSchema");
+const Command = require("../Structures/Command");
+const MemberSchema = require("../Schemas/memberSchema");
 const Discord = require("discord.js");
-const mongo = require("../../mongo");
+const mongo = require("../mongo");
 
 module.exports = new Command({
   name: "activePlayers",
