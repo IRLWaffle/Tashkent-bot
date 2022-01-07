@@ -1,5 +1,5 @@
-const Command = require("../../Structures/Command");
-const { getTop5Pumpkins } = require("../../Structures/DatabaseFunctions");
+const Command = require("../Structures/Command");
+const { getTop5Pumpkins } = require("../Structures/DatabaseFunctions");
 const DiscordJs = require("discord.js");
 
 module.exports = new Command({
