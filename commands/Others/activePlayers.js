@@ -30,7 +30,7 @@ module.exports = new Command({
     console.log(userId);
     for (let i = 0; i < userId.length; i++) {
       let user = await message.guild.members.fetch(userId[i]);
-      embed.addField(`${user.user.username}`);
+      embed.addField(`${user.user.username}`, "");
     }
     message.channel.send({ embeds: [embed] });
   },
