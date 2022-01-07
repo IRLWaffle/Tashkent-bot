@@ -25,9 +25,9 @@ module.exports = new Command({
 
     const userId = [];
     for (let i = 0; i < members.length; i++) {
+      if (members[i.pumpkins === 0]) continue;
       userId.push(members[i].userId);
     }
-    console.log(userId);
     for (let i = 0; i < userId.length; i++) {
       let user = await message.guild.members.fetch(userId[i]);
       embed.addField(`${user.user.username} `, "a");
