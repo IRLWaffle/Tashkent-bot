@@ -1,5 +1,5 @@
 const Command = require("../../Structures/Command");
-const Member = require("../../Schemas/memberSchema");
+const MemberSchema = require("../../Schemas/memberSchema");
 const Discord = require("discord.js");
 
 module.exports = new Command({
@@ -9,7 +9,7 @@ module.exports = new Command({
     const embed = new Discord.MessageEmbed()
       .setTitle("**The people that participated in the merry kissmas event")
       .setColor("ORANGE");
-    const members = await Member.find.memberPumpkin({
+    const members = await MemberSchema.memberPumpkin.find({
       guildId: message.guild.id,
     });
     const userId = [];
