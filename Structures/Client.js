@@ -11,7 +11,7 @@ class Client extends DiscordJs.Client {
      * @type {DiscordJs.Collection<string, Command>}
      */
     //commands collections
-    this.commands = new DiscordJs.Collection();
+    // this.commands = new DiscordJs.Collection();
     this.slashCommands = new DiscordJs.Collection();
     this.arrayOfSlashCommands = [];
     this.commandFolders = [];
@@ -20,8 +20,8 @@ class Client extends DiscordJs.Client {
 
   start(token) {
     // load all legacy commands commands
-    this.getFoldersForCommands("commands", this.commandFolders);
-    this.commandFolders.forEach((folderName) => this.setCommands(folderName));
+    // this.getFoldersForCommands("commands", this.commandFolders);
+    // this.commandFolders.forEach((folderName) => this.setCommands(folderName));
 
     //load events
     fs.readdirSync("./Events")
@@ -58,17 +58,17 @@ class Client extends DiscordJs.Client {
   }
 
   //helper function to set commands to the client
-  setCommands(folderName) {
-    fs.readdirSync(`./commands/${folderName}`)
-      .filter((file) => file.endsWith(".js"))
-      .forEach((file) => {
-        /**
-         * @type {Command}
-         */
-        const command = require(`../commands/${folderName}/${file}`);
-        this.commands.set(command.name, command);
-      });
-  }
+  // setCommands(folderName) {
+  //   fs.readdirSync(`./commands/${folderName}`)
+  //     .filter((file) => file.endsWith(".js"))
+  //     .forEach((file) => {
+  //       /**
+  //        * @type {Command}
+  //        */
+  //       const command = require(`../commands/${folderName}/${file}`);
+  //       this.commands.set(command.name, command);
+  //     });
+  // }
 
   //helper function to set slash commands to the client
   setSlashCommand(folderName) {

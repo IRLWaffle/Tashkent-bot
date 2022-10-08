@@ -1,4 +1,3 @@
-const { DMChannel } = require("discord.js");
 const Event = require("../Structures/Event");
 
 module.exports = new Event("messageCreate", async (client, message) => {

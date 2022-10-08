@@ -11,17 +11,19 @@
   "license": "ISC",
   "dependencies": {
     "anime-images-api": "^2.0.0",
+    "axios": "^1.1.2",
+    "discord-images": "^1.0.4",
     "discord.js": "^13.3.1",
     "dotenv": "^10.0.0",
     "mongoose": "^6.0.14",
+    "node-fetch": "^2.6.1",
     "random-gif-api": "^1.0.4",
-    "soyultro": "^4.8.5",
-    "tenorjs": "^1.0.8"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
+    "tenorjs": "^1.0.10"
   },
   "engines": {
     "node": "16.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
