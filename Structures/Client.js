@@ -42,7 +42,7 @@ class Client extends DiscordJs.Client {
 
     this.on("ready", () => {
       //load slash commands to the test servers
-      const testServers = ["893210671385280522"];
+      const testServers = ["893210671385280522", "1025981125329424446"];
       testServers.forEach((server) => {
         this.guilds.cache.get(server).commands.set(this.arrayOfSlashCommands);
       });
